@@ -1,0 +1,191 @@
+
+.profileSearch {
+    display: flex;
+    width: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileSearch img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.profileSearch .profileSearchContain {
+    width: 97%;
+    display: flex;
+    padding: 0.7rem;
+}
+
+.profileSearch .profileSearchContain .storyImg1 {
+    filter: brightness(0) invert(1);
+    flex-grow: 1;
+
+}
+
+
+.profileSearch .profileSearchContain .profileImg{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profileSearch .profileSearchContain .profileImg .img {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.profileSearch .profileSearchContain .profileImg img{
+    width: 96%;
+    height: 96%;
+    border-radius: 50%;
+    flex-grow: 1;
+}
+
+.profileSearch .profileSearchContain input {
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px 15px;
+    margin: 0 8px;
+    flex-grow: 3;
+    color: white;
+    background: rgb(49, 49, 49);
+    font-size: 1rem;
+}
+
+.profileSearch .profileSearchContain ::placeholder {
+    color: rgb(217, 216, 216);
+}
+
+.storiesContainer img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.storiesContainer {
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 15px;
+    border-top:3px solid rgb(5, 0, 0);
+    border-bottom: 3px solid rgb(5, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.contained {
+    display: flex;
+    gap: 2px;
+}
+
+.storiesContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.storiesContainer .story {
+    width: 17.2%;
+    background-color: #eee;
+    float: none;
+    height: 9.8rem;
+    margin: 0 0.90%;
+    display: inline-block;
+    zoom: 1;
+    border-radius: 8px;
+
+}
+
+.storiesContainer .story .minutes {
+    background-color: rgb(18, 18, 217);
+    width: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: rgb(247, 238, 238);
+    background-size: contain;
+}
+
+.storiesContainer .story .minutes span {
+    padding: 2px;
+    font-size: 0.8rem;
+}
+
+.storiesContainer .story .userText {
+    display: flex;
+    height: 75%;
+    justify-content: end;
+    width: 90%;
+    flex-direction: column;
+}
+
+.storiesContainer .story .userText p {
+    width: 100%;
+    text-wrap: wrap;
+    height: 40%;
+    display: flex;
+    font-size: 100%;
+    padding: 0 6px 0 5px;
+    text-indent: 2px;
+}
+
+.storiesContainer .addToStory .img {
+    border: 2px solid rgb(8, 6, 6);
+    height: 100%;
+    border-radius: 8px;
+    width: 6rem;
+}
+
+
+.storiesContainer .addToStory .img .storyPic {
+    height: 65%;
+    border-radius: 8px 8px 0 0;
+}
+
+.storiesContainer .addToStory .addToStoryImg2 {
+    width: 100%;
+    display: flex;
+    top: 40px;
+    height: 100%;
+    align-items:end;
+    justify-content: center;
+}
+
+.storiesContainer .addToStory .addToStoryImg2 .addToStory3{
+    background: blue !important;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.storiesContainer .addToStory .addToStoryText2 {
+    height: 35%;
+    display: flex;
+    align-items: end;
+    font-size: 90%;
+    font-weight: 200;
+    justify-content: center;
+    padding-bottom: 5px;
+}

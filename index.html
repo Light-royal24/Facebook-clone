@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/header.css"/>
+    <link rel="stylesheet" href="style/displayTabs.css"/>
+    <link rel="stylesheet" href="style/stories.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+ <body>
+    <div class="container">
+        <header>
+        <nav>
+            <div class="name"> 
+                <div>
+                    <h1>Facebook</h1>
+                </div>      
+                <div class="nameFlex">
+
+                    <div>
+                        <div class=" nameFlexGray">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" nameFlexGray">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>  
+                    <div>
+                        <div class=" nameFlexGray">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+            <div class="others">
+                <div>
+                    <div class="info-tab active" id="home">
+                        <img id="home" width="10" height="10" src="https://img.icons8.com/material-rounded/24/home.png" alt="home"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-tab" id="friends">
+                        <img id="friends" width="10" height="10" src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/external-users-user-tanah-basah-glyph-tanah-basah-3.png" alt="friends"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-tab"  id="messages">
+                        <img id="messages" src="./img/messenger.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="info-tab" id="notification">
+                        <img id="notification" width="10" height="10" src="https://img.icons8.com/ios-filled/50/bell.png" alt="bell"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-tab" id="videos">
+                        <img id="videos" src="./img/video.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="info-tab" data-type="marketplace" id="marketplace">
+                        <img id="marketplace" width="10" height="10" src="https://img.icons8.com/dotty/80/small-business.png" alt="small-business"/>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+
+        <div class="contentTabs">
+        <div class="content">
+            <div class="info-row data-info active" data-name="home">
+                <div class="info">
+                  <div id="homePage">
+                    <div class="storyDiv">
+                        <div class="profileSearch">
+                            <div class="profileSearchContain">
+                                <div class="homeProfile profileImg"></div>
+                                <input type="search" name="" id="" placeholder="what's on your mind">
+                                <img src="./img/video.png" class="storyImg1" alt="">
+                        </div>
+                        </div>
+                        <div class="storiesContainer">
+                            <div class="contained">
+                                <div class="addToStory"></div>
+                                <div class="stories"></div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="info-row data-info"  data-name="friends">
+                <div class="info">
+                  <h1>friends</h1>
+                </div>
+            </div>
+            <div class="info-row data-info" data-name="messages">
+                <div class="info">
+                  <h1>messages</h1>
+                </div>
+            </div>
+            <div class="info-row data-info" data-name="notification">
+                <div class="info">
+                  <h1>notification</h1>
+                </div>
+            </div>
+            <div class="info-row data-info" data-name="videos">
+                <div class="info">
+                  <h1>videos</h1>
+                </div>
+            </div>
+            <div class="info-row data-info" data-name="marketplace">
+                <div class="info">
+                  <h1>marketplace</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="./js/tab.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>
