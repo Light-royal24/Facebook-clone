@@ -1,0 +1,189 @@
+:root {
+    --grey: #90949C;
+    --blue: #1878f3;
+    --sky-blue: #61a5fe;
+    --green: #30a24c;
+    --light-green: #64b978;
+    --dark-grey: #232527;
+    --light-grey: #393a3c;
+    --grey-active: #252530;
+    --noti-bg-color: #232e3a;
+}
+
+.infoNoti {
+    margin-top: 4.7rem;
+    padding-top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+
+.notiHead {
+    background-color: #101010;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 24px;
+    z-index: 1;
+}
+
+
+.noticeHead {
+    width: 100%;
+    padding-top: 3.4rem;
+}
+
+.allRead {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.allRead h5 {
+    background-color: #181818;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+
+.noti-tab {
+    background-color: #181818;
+    height: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.tab-header {
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em 0.8em;
+}
+.tab-header .search-icon {
+    background-color: #1a1c1b;
+}
+.tab-heading {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.noti-sort-by {
+    display: block;
+    padding: 0.5em 0.8em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.notis-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+}  
+.noti-container p {
+    font-size: 0.89em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    align-items: center;
+    justify-content: center;
+}
+.noti-container {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.8em;
+    background-color: var(--noti-bg-color); 
+    display: flex;
+    gap: 0.6rem;
+} 
+.noti-container:active {
+    background-color: var(--light-grey) !important;
+}
+.user-avatar-large {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: #333;
+}
+.birthday-badge, .noti-badge{
+    position: relative;
+    left: 65%; top: 65%;
+    right: 0;
+    width: 1.7em;
+    height: 1.7em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+}
+.birthday-badge {
+    background: -o-linear-gradient(#f96ec0 10%, #df2390 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f96ec0), color-stop(90%, #df2390));
+    background: linear-gradient(#f96ec0 10%, #df2390 90%);
+}
+.noti-badge {
+    background: -o-linear-gradient(#61c4ff 10%, var(--blue) 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #61c4ff), color-stop(90%, var(--blue)));
+    background: linear-gradient(#61c4ff 10%, var(--blue) 90%);
+}
+.noti-details {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+        flex-grow: 1;
+}
+
+.notiDetails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.noti-details span {
+    width: 20px;
+    color: var(--grey);
+}
+
+.noti-details p {
+    max-width: 85%;
+}
+.noti-container .more-options-icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 1.5em;
+            flex: 0 0 1.5em;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin-top: 0.99em;
+}
+.menu-tab {
+    width: 100vw;
+    min-height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
