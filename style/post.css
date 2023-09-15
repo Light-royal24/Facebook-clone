@@ -1,6 +1,8 @@
 
 .posts-container {
-    margin: 10px 0 10vh 0;
+    margin: 1px 0 10vh 0;
+    border-top: 1px solid rgb(174, 171, 171);
+
 }
 
 .post-container {
@@ -13,7 +15,8 @@
     margin-bottom: 10px;
     height: 100%;
     width: 100%;
-    background-color: var(--dark-grey);
+    border-top: 1.3px solid white;
+    padding-top: 1.1rem;
 
 }
 .post-header {
@@ -62,18 +65,8 @@
 .post-img {
     min-width: 100%;
     max-width: 100%;
-    min-height: 260px;
-    background-color: var(--grey);
-}
-.room-icon img {
-    -webkit-filter: invert(44%) sepia(8%) saturate(3077%) hue-rotate(198deg) brightness(93%) contrast(90%);
-            filter: invert(44%) sepia(8%) saturate(3077%) hue-rotate(198deg) brightness(93%) contrast(90%);
-}
-.go-live img {
-    width: 1.5em;
-    height: 1.5em;
-    -webkit-filter: invert(51%) sepia(78%) saturate(4013%) hue-rotate(335deg) brightness(96%) contrast(104%);
-            filter: invert(51%) sepia(78%) saturate(4013%) hue-rotate(335deg) brightness(96%) contrast(104%);
+    height: 300px;
+    background-color: gray;
 }
 .post-info {
     -webkit-box-flex: 1;
@@ -91,15 +84,13 @@
             align-items: center;
 }
 .post-timestamp {
-    color: var(--grey);
+    color: gray;
 }
-.post-header img {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-}
+
 .post-content p {
-    margin: 0.8em;
+    margin: 0.8em 0 0.8em 1.5rem;
 }
+
 .online-badge {
     position: relative;
     left: 70%; top: 70%;
@@ -107,25 +98,21 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--green);
-    border: 2px solid var(--dark-grey);
+    background-color: green;
+    border: 2px solid darkgray;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
 }
+
 .post-stats {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0.9em 0;
+    padding: 0.9em 1.5em;
     width: 95%;
     height: 100%;
     font-size: 0.8em;
-    color: var(--grey);
-    border-bottom: 0.01em solid var(--grey);
+    color: rgb(250, 248, 248);
+    font-size: 1rem;
 }
+
 .likesCount {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -134,30 +121,26 @@
 .post-stats:active {
     background-color: var(--grey-active);
 }
-.post-reactions {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
+
 .post-btns {
     color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
 .post-btns>span {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8px 10px;
+    margin: 1px 10px 8px 15px;
     background-color: rgb(75, 72, 72);
     padding: 10px;
     border-radius: 10rem;
     width: 30%;
+}
+
+.post-btns img {
+    filter: brightness(0) invert(1);
 }
 .post-btns>span:active {
     background-color: var(--grey-active);
@@ -166,9 +149,7 @@
     margin-left: 5px;
 }
 .react-like, .react-love {
-    margin-left: -4px;
-    min-width: 1.3em;
-    min-height: 1.3em;
+    margin-left: -7px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -179,22 +160,23 @@
         -ms-flex-align: center;
             align-items: center;
     border-radius: 50%;
-    background-color: var(--blue);
+    background-color: blue;
 }
 .react-like {  
     position: relative;
-    z-index: 1;
-    width: 1.6em;
-    height: 1.6em;
-    border: 2px solid var(--dark-grey);
-    background: -o-linear-gradient(var(--sky-blue) 10%, var(--blue) 90%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, var(--sky-blue)), color-stop(90%, var(--blue)));
-    background: linear-gradient(var(--sky-blue) 10%, var(--blue) 90%);
+   width: 1.7rem !important;
+   height: 1.7rem !important;
+   padding: 0.1rem 0.3rem;
+    border: 2px solid gray;
+    background: -o-linear-gradient(skyblue 10%, blue 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, skyblue), color-stop(90%, blue));
+    background: linear-gradient(blue 10%, blue 90%);
 }
 .react-love {
     background: -o-linear-gradient(#aa0010 10%, #ff0050 90%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #aa0010), color-stop(90%, #ff0050));
     background: linear-gradient(#aa0010 10%, #ff0050 90%);
+    padding: 0.2rem 0.4rem;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
 }

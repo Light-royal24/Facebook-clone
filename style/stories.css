@@ -20,18 +20,18 @@
 .profileSearch .profileSearchContain .storyImg1 {
     filter: brightness(0) invert(1);
     flex-grow: 1;
-
 }
 
 
 .profileSearch .profileSearchContain .profileImg{
-    width: 2.8rem;
+    max-width: 2.8rem !important;
     height: 2.8rem;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    flex-grow: 9;
 }
 
 .profileSearch .profileSearchContain .profileImg .img {
@@ -56,9 +56,9 @@
     border-radius: 30px;
     border: none;
     outline: none;
-    padding: 10px 10px 10px 15px;
+    padding: 10px 0.2rem 10px 1rem;
     margin: 0 8px;
-    flex-grow: 3;
+    flex-grow: 1;
     color: white;
     background: rgb(49, 49, 49);
     font-size: 1rem;
@@ -81,8 +81,8 @@
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     padding: 15px;
-    border-top:3px solid rgb(5, 0, 0);
-    border-bottom: 3px solid rgb(5, 0, 0);
+    border-top: 3px solid rgb(5, 0, 0);
+    border-bottom: 5px solid rgb(5, 0, 0);
     justify-content: center;
     align-items: center;
 }
@@ -97,7 +97,7 @@
 }
 
 .storiesContainer .story {
-    width: 17.2%;
+    width: 6rem;
     background-color: #eee;
     float: none;
     height: 9.8rem;

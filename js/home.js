@@ -121,7 +121,6 @@ function displaystorys(storys) {
   function displayAddStory(profiles) {
     const firstStory = profiles.map((profile) => {
       const {profilePic} = profile;
-      console.log(profilePic)
   
       return `
         <div class="img" >
@@ -326,7 +325,6 @@ function displaystorys(storys) {
 
     const mainPost = document.querySelector(".posts-container");
     mainPost.innerHTML = newPost
-    console.log(mainPost)
   }
 
   displayPost();

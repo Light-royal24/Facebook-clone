@@ -25,6 +25,7 @@
         font-size: 1.9rem;
         font-family: 'Montserrat', sans-serif;
         font-family: 'Nunito' sans-serif;
+        font-size: 1.6rem;
     }
     
     header .name {
@@ -32,8 +33,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        display: none;
     }
+
+    header.active .name {
+        display: flex;
+    }
+
     header .nameFlex {
         display: flex;
         gap: 0.5rem;
@@ -41,14 +47,14 @@
 
     header .nameFlex i {
         color: white;
-        font-size: 1.6rem;
+        font-size: 1rem;
         padding: 8px;
         font-weight: lighter;
         border-radius: 50%;
     }
     header .nameFlex .nameFlexGray {
-        width: 2.6rem;
-        height: 2.6rem;
+        width: 1.9rem;
+        height: 1.9rem;
         background: gray;
         border-radius: 50%;
         display: flex;
@@ -66,8 +72,8 @@
 
     header .info-tab img {
         filter: brightness(0) invert(1);
-        width: 2.1rem;
-        height: 2.1rem;
+        width: 1.8rem;
+        height: 1.8rem;
     }
 
     header .info-tab.active img {

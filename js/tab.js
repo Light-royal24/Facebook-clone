@@ -21,6 +21,13 @@ dataTabs.forEach((dataTab) => {
         panel.classList.remove("active");
       }
 
+      const header = document.querySelector('header');
+      if(tabName !== 'home') {
+        header.classList.remove('active')
+      }else {
+        header.classList.add('active')    
+      }
+
     });
   });
 });
