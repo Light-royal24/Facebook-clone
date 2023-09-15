@@ -1,0 +1,200 @@
+
+.posts-container {
+    margin: 10px 0 10vh 0;
+}
+
+.post-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0.8em;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-grey);
+
+}
+.post-header {
+   display: flex;
+}
+
+.post-header-content1 img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0 1px 0 20px;
+}
+
+.post-header-content2 {
+    width: 100%;
+    margin: 0 15px 0 7px;
+}
+
+.nameContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 7px 5px 0 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.hoursContent {
+    display: flex;
+    gap: 10px;
+    color: gray;
+    align-items: center;
+    padding: 3px;
+}
+
+.hoursContent span {
+    top: -3px;
+    position: relative;
+    font-weight: 900;
+}
+
+.hoursContent img {
+    padding: 3px 0 0 0;
+}
+
+.post-img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 260px;
+    background-color: var(--grey);
+}
+.room-icon img {
+    -webkit-filter: invert(44%) sepia(8%) saturate(3077%) hue-rotate(198deg) brightness(93%) contrast(90%);
+            filter: invert(44%) sepia(8%) saturate(3077%) hue-rotate(198deg) brightness(93%) contrast(90%);
+}
+.go-live img {
+    width: 1.5em;
+    height: 1.5em;
+    -webkit-filter: invert(51%) sepia(78%) saturate(4013%) hue-rotate(335deg) brightness(96%) contrast(104%);
+            filter: invert(51%) sepia(78%) saturate(4013%) hue-rotate(335deg) brightness(96%) contrast(104%);
+}
+.post-info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+}
+.post-info small {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.post-timestamp {
+    color: var(--grey);
+}
+.post-header img {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+}
+.post-content p {
+    margin: 0.8em;
+}
+.online-badge {
+    position: relative;
+    left: 70%; top: 70%;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--green);
+    border: 2px solid var(--dark-grey);
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
+.post-stats {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.9em 0;
+    width: 95%;
+    height: 100%;
+    font-size: 0.8em;
+    color: var(--grey);
+    border-bottom: 0.01em solid var(--grey);
+}
+.likesCount {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+.post-stats:active {
+    background-color: var(--grey-active);
+}
+.post-reactions {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.post-btns {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.post-btns>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 10px;
+    background-color: rgb(75, 72, 72);
+    padding: 10px;
+    border-radius: 10rem;
+    width: 30%;
+}
+.post-btns>span:active {
+    background-color: var(--grey-active);
+}
+.post-reactions>span {
+    margin-left: 5px;
+}
+.react-like, .react-love {
+    margin-left: -4px;
+    min-width: 1.3em;
+    min-height: 1.3em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+.react-like {  
+    position: relative;
+    z-index: 1;
+    width: 1.6em;
+    height: 1.6em;
+    border: 2px solid var(--dark-grey);
+    background: -o-linear-gradient(var(--sky-blue) 10%, var(--blue) 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, var(--sky-blue)), color-stop(90%, var(--blue)));
+    background: linear-gradient(var(--sky-blue) 10%, var(--blue) 90%);
+}
+.react-love {
+    background: -o-linear-gradient(#aa0010 10%, #ff0050 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #aa0010), color-stop(90%, #ff0050));
+    background: linear-gradient(#aa0010 10%, #ff0050 90%);
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
