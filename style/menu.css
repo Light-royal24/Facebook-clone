@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --grey: #90949C;
+    --blue: #1878f3;
+    --sky-blue: #61a5fe;
+    --green: #30a24c;
+    --light-green: #64b978;
+    --dark-grey: #232527;
+    --light-grey: #393a3c;
+    --grey-active: #252530;
+    --noti-bg-color: #232e3a;
+}
+
+body {
+    background-color: #18191b;
+}
+
+.tab-header .searchIcon {
+    background-color: #2e2e2e;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.tab-header {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    color: white;
+    background-color: #18191b;
+}
+
+
+.profile-wrapper {
+    display: flex;
+}
+
+/* made with love by light royal */

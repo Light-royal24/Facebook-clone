@@ -22,12 +22,19 @@ dataTabs.forEach((dataTab) => {
       }
 
       const header = document.querySelector('header');
-      if(tabName !== 'home') {
+      const container = document.querySelector(".container")
+      if (tabName !== 'home') {
         header.classList.remove('active')
-      }else {
+      } else {
         header.classList.add('active')    
       }
 
+      if(tabName == 'menu' ) {
+        container.classList.add('active')
+      } else {
+        container.classList.remove('active')    
+      }
+      
     });
   });
 });

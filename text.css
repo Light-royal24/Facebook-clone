@@ -1,0 +1,207 @@
+
+/* 
+.more-options small {
+    position: relative;
+    top: 50%;
+    color: var(--grey);
+    background-color: #18191b;
+}
+
+.new-account-btn {
+    margin: 3em auto;
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    font-size: inherit;
+    border-radius: 1.5vw;
+    color: #fff;
+    background-color: var(--green);
+}
+
+.new-account-btn:active {
+    background-color: var(--light-green);
+}
+
+
+
+.tab-heading {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.noti-sort-by {
+    display: block;
+    padding: 0.5em 0.8em;
+}
+.notis-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+}  
+.noti-container p {
+    font-size: 0.89em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+.noti-container {
+    max-width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5em 0.8em;
+    background-color: var(--noti-bg-color); 
+} 
+.noti-container:active {
+    background-color: var(--light-grey) !important;
+}
+.user-avatar-large {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: #333;
+}
+.birthday-badge, .noti-badge{
+    position: relative;
+    left: 65%; top: 65%;
+    right: 0;
+    width: 1.7em;
+    height: 1.7em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+}
+.birthday-badge {
+    background: -o-linear-gradient(#f96ec0 10%, #df2390 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f96ec0), color-stop(90%, #df2390));
+    background: linear-gradient(#f96ec0 10%, #df2390 90%);
+}
+.noti-badge {
+    background: -o-linear-gradient(#61c4ff 10%, var(--blue) 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #61c4ff), color-stop(90%, var(--blue)));
+    background: linear-gradient(#61c4ff 10%, var(--blue) 90%);
+}
+.noti-details {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    padding: 0.8em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+}
+.noti-details span {
+    font-size: 0.8em;
+    color: var(--grey);
+}
+.noti-container .more-options-icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 1.5em;
+            flex: 0 0 1.5em;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin-top: 0.99em;
+}
+.menu-tab {
+    width: 100vw;
+    min-height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.profile-wrapper:active {
+    background-color: var(--light-grey);
+}
+.view-profile {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.8em;
+    color: var(--grey);
+}
+.view-profile span {
+    font-weight: bold;
+    color: #fff;
+}
+.tab-cards {
+    width: 100%;
+    height: 100%;
+    margin-top: -0.8em;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding: 0.8em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.tab-cards > div {
+    width: 48.9%;
+    height: 100%;
+    padding: 0.8em;
+    margin-top: 0.8em;
+    border-radius: 2vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #333;
+}
+.tab-cards > div:active {
+    background-color: var(--grey);
+}
+.tab-cards > div > span {
+    margin-top: 0.5em;
+}
+.menu-options > div {
+    width: 100%;
+    height: 100%;
+    padding: 0.8em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+}
+.menu-options > div:active {
+    background-color: var(--grey);
+}
+.menu-options > div > span {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 0.8em;
+}
+.menu-options > div > img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 2em;
+            flex: 0 0 2em;
+} */

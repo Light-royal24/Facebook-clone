@@ -5,6 +5,10 @@
 
 }
 
+.hide {
+    display: none;
+}
+
 .post-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

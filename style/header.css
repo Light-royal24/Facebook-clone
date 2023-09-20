@@ -45,6 +45,10 @@
         gap: 0.5rem;
     }
 
+    .container.active header {
+        display: none;
+    }
+
     header .nameFlex i {
         color: white;
         font-size: 1rem;
