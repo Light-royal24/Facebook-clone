@@ -342,11 +342,8 @@ button[type="button"]:active, .lang-more:active {
             flex-direction: column;
 }
 .profile-wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: 0 0.8em;
-    border-bottom: 1px solid var(--grey);
+    margin-bottom: 25px;
 }
 .profile-wrapper:active {
     background-color: var(--light-grey);

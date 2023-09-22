@@ -26,18 +26,105 @@ body {
 }
 
 .tab-header {
+    position: sticky;
+    width: 100%;
     display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #18191b;
+    padding: 120px;
+    top: 0;
+    z-index: 999;
+}
+
+.tab-header .tabHeaderitems {
+    display: flex;
+    background-color: #18191b;
     width: 90%;
     justify-content: space-between;
-    position: fixed;
     align-items: center;
     color: white;
     background-color: #18191b;
+    /* position: fixed; */
+    /* margin: 40px 2px; */
+    /* padding: 12rem 0; */
 }
 
 
 .profile-wrapper {
     display: flex;
+}
+
+/* .menu-options {
+    border-bottom: 1px solid rgb(193, 188, 188);
+} */
+
+.profile-wrapper {
+    display: flex;
+}
+
+.view-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    background-color: #232527;
+    border-radius: 15px;
+}
+
+.view-profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.viewProfileText1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.viewProfileText {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.viewProfileText img {
+    background-color: rgb(160, 160, 160);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 11px 0 0;
+    width: 28px;
+    height: 28px;
+}
+
+
+
+.menu-options div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-cards {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(205, 204, 204);
+    border-top: 1px solid rgb(205, 204, 204);
+}
+
+.tab-cards div {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 /* made with love by light royal */

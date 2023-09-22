@@ -137,7 +137,7 @@
 }
 
 .storiesContainer .story .userText p {
-    width: 100%;
+    width: 60%;
     text-wrap: wrap;
     height: 40%;
     display: flex;
